@@ -1,0 +1,239 @@
+//sidebar///////////
+.sidebar{
+    background-color:$sidebar;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    transition: 0.2s;
+    z-index: 9 !important;
+    @media($breakpoint_LG) {
+        width: 70px;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        box-shadow: -3px -3px 5px -1px $white;
+        color: $txt-white;
+
+    }
+
+    .sidebar-content{
+        width: 100%;
+            .drop-btn{
+                position: relative;
+                display: flex;
+                .drop-icon{
+                    .icon{
+                        color:$txt-white;
+                        font-size: 13px;
+                    }
+                }
+                .drop-title{
+                    overflow: hidden;
+                    margin-left: 10px;
+                    .title{
+                        color: $txt-white;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        white-space: nowrap;
+                        @media($breakpoint_LG) {
+                            display: none;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $txt-white;
+                        }
+
+                    }
+                }
+                .arrow-icon{
+                    position: absolute;
+                    right: 20px;
+                    @media($breakpoint_LG) {
+                        display: none;
+                    }
+                    .i-right{
+                        color: $txt-white;
+                        transform: rotate(0deg);
+                        transition: .5s;
+                        font-size: 13px;
+                    }
+                }
+            }
+            .drop-content{
+                padding: 0px 20px !important;
+                background-color: $card;
+                @media($breakpoint_LG) {
+                    transition: 0s !important;
+                    // display: none;
+                    visibility: hidden;
+                    opacity: 0;
+                    position: absolute;
+                    left: 70px;
+                    width: 200px;
+                    z-index: 999;
+                    top: 17px;
+                    padding: 5px 0px;
+                    border-radius: 0px 5px 5px 0;
+                }
+                li{
+                    list-style: none;
+                    white-space: nowrap;
+                    
+                        padding: 10px 10px;
+                        @media($breakpoint_LG) {
+                            padding: 5px 10px;
+                            margin-left: 0px;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: $txt-white;
+                        width: 100%;
+                        // display: flex;
+                        }
+                }
+            }
+
+
+           
+
+            .accordion-item{
+                @media($breakpoint_LG) {
+                position: relative;
+                &:hover{
+                    .drop-content{
+                        opacity: 1;
+                        visibility: visible;
+                    
+                    }
+                }
+            }
+            }
+
+
+
+
+
+        .accordion{
+            background-color: transparent;
+            margin-top: 15px;
+
+       
+        .accordion-item {
+            background: transparent;
+            border:0px;
+        }
+        .accordion-button{
+            border:0;
+            padding-top: 10px ;
+            padding-bottom: 10px ;
+            &:after{
+                display: none;
+            }
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: transparent;
+            border: 0px !important;
+            box-shadow: none !important;
+            .arrow-icon{
+                .i-right{
+                    transform: rotate(90deg);
+                    transition: .5s;
+                }
+            }
+        }
+        .accordion-button.collapsed {
+            background: transparent;
+            border: none !important;
+        }
+     }
+
+    }
+}
+
+
+
+//
+.new_sidebar{
+    width: 70px;
+    @media($breakpoint_LG) {
+        width: 250px;
+    }
+   
+
+    .sidebar-content{
+        
+        .drop-btn{
+           
+            .drop-title{
+                overflow: hidden;
+                .title{
+                    display: none;
+                    @media($breakpoint_LG) {
+                        display: block;
+                    }
+                        
+                }
+            }
+            .arrow-icon{
+                visibility: hidden;
+                display: none;
+                @media($breakpoint_LG) {
+                    display: block;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .drop-content {
+            transition: 0s !important;
+            
+            visibility: hidden;
+            opacity: 0;
+            background-color: $card;
+            position: absolute;
+            left: 70px;
+            top:0;
+            width: 200px;
+            z-index: 999;
+            top: 17px;
+            transition: 0s !important;
+            padding: 10px 0px;
+            border-radius: 0px 5px 5px 0;
+            @media($breakpoint_LG) {
+                visibility: visible;
+                opacity: 1;
+                position: relative;
+                left: auto;
+                width: auto;
+                z-index: 999;
+                top:auto;
+                padding: 10px 16px;
+                border-radius: 0;
+            }
+           
+                li {
+                    padding: 7px 10px;
+                    margin-left: 0px;
+                }
+            
+        }
+        .accordion-item{
+            position: relative;
+            &:hover{
+                .drop-content{
+                    opacity: 1;
+                    visibility: visible;
+                
+                }
+            }
+        }
+    }
+}

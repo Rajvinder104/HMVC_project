@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Plus Jakarta Sans', sans-serif;
+@import 'theme.scss';
+
+$breakpoint_XXL: 'max-width: 1400px';
+$breakpoint_XL: 'max-width: 1200px';
+$breakpoint_LG: 'max-width: 992px';
+$breakpoint_MD: 'max-width: 767px';
+$breakpoint_SM: 'max-width: 576px';
+$breakpoint_479: 'max-width: 479px';
+$breakpoint_320: 'max-width: 320px';
+
+
+$font-roboto:'Roboto', sans-serif;
+$font-plus:'Plus Jakarta Sans', sans-serif;
+
+
+$bg-theme:var(--bg-theme);
+$light-bg:var(--light-bg);
+
+$sidebar:var(--sidebar-bg);
+$header:var(--header-bg);
+$main:var(--main-bg);
+$footer:var(--footer-bg);
+
+$primary-color:var(--primery-color);
+
+$white:var(--white-color);
+$black:var(--black-color);
+
+$success:var(--txt-success);
+$danger:var(--txt-danger);
+$primary:var(--txt-primary);
+$warning:var(--txt-warning);
+$purple:var(--txt-purple);
+
+$txt-black:var(--txt-black);
+$txt-white:var(--txt-white);
+
+
+
+$light-gray:var(--light-gray);
+
+$border:var(--border-color);
+$card:var(--card-color);
+
+$input-color:var(--input-color);
+body{
+    margin: 0px;
+    padding: 0px; 
+    background-color: $bg-theme; 
+}
+li{
+    list-style: none;
+}
+a{
+    font-family: $font-roboto;
+    text-decoration: none;
+}
+p{
+    font-family: $font-roboto;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h3{
+    font-size: 22px;
+    font-family:$font-roboto;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+h4{
+    font-size: 18px;
+    font-family:$font-roboto;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.comman-card{
+    box-shadow: 0px 0px 6px -4px $black;
+    padding: 20px 15px;
+    border-radius: 7px;
+    min-height: 160px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    background-image: url('../img//bg1.png');
+    background-size: cover;
+   
+    &:hover{
+        background-color: $primary-color;
+        box-shadow: 0px 0px 10px -4px $black;
+        .card-title{
+            color: $txt-black;
+        }
+        h3{
+            color: $txt-black !important;
+        }
+    }
+    .card-icon{
+        position: absolute;
+    }
+    .card-title{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 800;
+            color: $txt-black;
+            margin-bottom: 15px;
+            
+    }
+    h3{
+        display: flex;
+        flex-direction: column;
+        color: $txt-black;
+        margin: 15px 0px;
+        .total-title{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;  
+        }
+        .total{
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+          
+        }
+    }
+}
+.card-1{
+    background-color:$success !important;
+  
+   
+}
+.card-2{
+    background-color:$purple !important;
+   
+}
+.card-3{
+    background-color:$primary!important;
+}
+.card-4{
+    background-color:$warning !important;
+}
+.card-5{
+    background-color:$danger!important;
+}

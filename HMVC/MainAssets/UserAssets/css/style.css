@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --bg-theme: #fff;
+  --primery-color: rgb(93, 135, 255);
+  --border-color: #283845;
+  --txt-black: #000;
+  --txt-white: #fff;
+  --card-color: #283845;
+  --light-bg: #f7f7f7;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--bg-theme);
+}
+
+.register-login {
+  background-color: var(--txt-white);
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.register-login .reg-form {
+  max-width: 650px;
+  margin: 0px auto;
+  box-shadow: 0px 0px 10px -7px var(--txt-black);
+  padding: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.register-login .reg-form .logo {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  background-color: var(--light-bg);
+  box-sizing: border-box;
+}
+
+.register-login .reg-form .logo img {
+  width: 100px;
+}
+
+.register-login .reg-form .title {
+  padding: 30px 20px 0px;
+}
+
+.register-login .reg-form .title h3 {
+  margin: 0px;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.register-login .reg-form .main-form {
+  padding: 20px 20px 0px;
+}
+
+.register-login .reg-form .main-form label {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-login .reg-form .main-form input {
+  border: none;
+  background-color: var(--light-bg);
+  padding: 10px 10px;
+}
+
+.register-login .reg-form .main-form input:focus {
+  box-shadow: none;
+}
+
+.register-login .reg-form .main-form .form-btn {
+  background-color: var(--primery-color);
+  color: var(--txt-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 10px 30px;
+}
+
+.register-login .reg-form .main-form .forgot-div {
+  text-align: end;
+}
+
+.register-login .reg-form .main-form .forgot-div a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primery-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-login .reg-form .form-footre {
+  padding: 30px 20px 30px;
+  text-align: center;
+}
+
+.register-login .reg-form .form-footre p {
+  font-size: 14px;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.register-login .reg-form .form-footre p a {
+  text-decoration: none;
+  color: var(--primery-color);
+}
+
+/*# sourceMappingURL=style.css.map */

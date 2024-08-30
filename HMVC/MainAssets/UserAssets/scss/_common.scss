@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// font-family: 'Roboto', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+// font-family: 'Plus Jakarta Sans', sans-serif;
+
+$breakpoint_XXL: 'max-width: 1400px';
+$breakpoint_XL: 'max-width: 1200px';
+$breakpoint_LG: 'max-width: 992px';
+$breakpoint_MD: 'max-width: 767px';
+$breakpoint_SM: 'max-width: 576px';
+$breakpoint_479: 'max-width: 479px';
+$breakpoint_320: 'max-width: 320px';
+
+
+@import 'theme.scss';
+
+
+$bg-theme:var(--bg-theme);
+$light-bg:var(--light-bg);
+$primary-color:var(--primery-color);
+$txt-black:var(--txt-black);
+$txt-white:var(--txt-white);
+$border:var(--border-color);
+$card:var(--card-color);
+
+body{
+    margin: 0px;
+    padding: 0px; 
+    background-color: $bg-theme; 
+}

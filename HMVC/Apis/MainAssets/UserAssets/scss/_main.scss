@@ -1,0 +1,84 @@
+//main///////////
+.main {
+    width: 100%;
+    padding: 70px 0px 100px 250px;
+    transition: 0.2s;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: $main;
+    @media($breakpoint_LG) {
+        padding: 70px 0px 0px 70px;
+    }
+    @media($breakpoint_MD) {
+        padding: 70px 0px 0px 70px;
+    }
+
+    .page-title {
+        margin: 20px 20px;
+
+        h3 {
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+
+}
+
+//addclass-in-main-classs
+.new_main {
+    padding: 70px 0px 100px 70px;
+    @media($breakpoint_LG) {
+        padding: 70px 0px 0px 250px;
+    }
+    
+    @media($breakpoint_MD) {
+        padding: 70px 0px 0px 0px;
+    }
+    
+}
+// css-now-start
+.home-page{
+    .maintop-card{
+        background-color: $light-bg;
+        padding: 50px 0px;
+        border-radius: 10px;
+        @media($breakpoint_LG) {
+            padding: 30px 0px ;
+        }
+        .top-card{
+            text-align: center;
+            @media($breakpoint_LG) {
+                padding: 20px 0px ;
+            }
+            .icon{
+                font-size: 25px;
+            }
+            h4{
+                font-size: 16px;
+                margin: 10px 0px 10px 0px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+            }
+            h3{
+                font-size: 16px;
+                margin: 10px 0px 0px 0px;
+                font-family: 'Plus Jakarta Sans', sans-serif;
+                font-weight: 600;
+            }
+            .icon-1{
+                color: $success;
+            }
+            .icon-2{
+                color: $purple;
+            }
+            .icon-3{
+                color: $danger;
+            }
+            .icon-4{
+                color: $warning;
+            }
+        }
+    }
+}

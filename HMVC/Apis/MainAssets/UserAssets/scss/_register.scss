@@ -1,0 +1,188 @@
+.register-login {
+    background-color: $white;
+    width: 100%;
+    padding: 50px 0px;
+
+
+    .reg-form {
+        max-width: 650px;
+        margin: 0px auto;
+        box-shadow: 0px 0px 10px -7px $black;
+        padding: 0px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .logo {
+            background-color: $light-bg;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+
+            img {
+                width: 50px;
+            }
+        }
+
+        .title {
+            padding: 30px 20px 0px;
+
+            h3 {
+                margin: 0px;
+            }
+        }
+
+        .main-form {
+            padding: 20px 20px 0px;
+
+            label {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            input {
+                border: none;
+                background-color: $light-bg;
+                padding: 10px 10px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .form-btn {
+                background-color: $primary-color;
+                color: $txt-white;
+                font-family: 'Roboto', sans-serif;
+                font-size: 14px;
+                padding: 10px 30px;
+            }
+
+            .forgot-div {
+                text-align: end;
+                a {
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .form-footre {
+            padding: 30px 20px 30px;
+            text-align: center;
+            p {
+                font-size: 14px;
+                margin: 0px;
+                a {
+                 color: $primary-color;
+                }
+            }
+        }
+
+    }
+}
+
+.modal1 {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+   
+.model-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100% ;
+    height: 100vh;
+}
+    .modal-wrapper {
+        z-index: 99;
+        width: 800px;
+        height: 500px;
+        background-color: $light-bg;
+        border-radius: 10px;
+
+        .modal-header {
+            position: relative;
+            padding:20px 10px ;
+            .modal-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 1em;
+                color: #aaa;
+                background: none;
+                border: 0;
+                &:hover {
+                    color: #777;
+                  }
+              }
+          }
+          .modal-body{
+            padding: 30px 20px;
+            .modal-content{
+                p{
+                    color: $txt-black;
+                }
+            }
+          }
+    }
+
+    .modal-transition {
+        transition: all 0.3s 0.12s;
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    .modal-overlay {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: hsla(0, 0%, 0%, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0.3s, opacity 0.3s;
+    }
+           
+}
+
+.is-visible {
+    visibility: visible;
+
+    .modal-overlay {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s;
+    }
+    .modal-transition {
+          transform: translateY(0);
+          opacity: 1;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

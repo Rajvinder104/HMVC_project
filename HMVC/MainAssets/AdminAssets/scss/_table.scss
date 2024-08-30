@@ -1,0 +1,181 @@
+.main-table-div {
+    .table-searhbar {
+        background-color: $light-bg;
+        padding: 30px 15px;
+        .forn-flex-div {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+            select {
+                width: 200px;
+                border: none;
+                border-radius: 5px;
+                padding: 7px 10px;
+                font-size: 14px;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            input {
+                width: 200px;
+                padding: 7px 10px;
+                border-radius: 5px;
+                border: none;
+                font-size: 14px;
+
+                &:focus {
+                    box-shadow: none !important;
+                    outline: none;
+                }
+            }
+            .srh-btn {
+                background-color: $primary-color;
+                padding: 7px 10px;
+                color: $txt-white;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .admin-table {
+        position: relative;
+        overflow-y: scroll;
+        width: 100%;
+        .table {
+            width: 3000px;
+            margin-bottom: 0;
+            tr {
+                th {
+                    padding: 15px 10px;
+                    font-size: 14px;
+                    color: $txt-black;
+                }
+            }
+
+            tr {
+                td {
+                    width: 150px;
+                    font-size: 14px;
+                    padding: 15px 10px;
+                }
+
+                .td-action {
+                    width: 200px;
+
+                    gap: 10px;
+
+                    a {
+                        text-decoration: none;
+                        padding: 6px 20px;
+                        border-radius: 5px;
+                    }
+
+                    .login-btn {
+                        background-color: #0aa699;
+                        color: $txt-white;
+
+                    }
+
+                    .edit-btn {
+                        background-color: #1085f5;
+                        color: $txt-white;
+
+                    }
+
+                    .block-btn {
+                        background-color: #f53610;
+                        color: $txt-white;
+
+                    }
+                }
+            }
+        }
+    }
+}
+.table-pagination {
+    background-color: $light-bg;
+    padding: 10px 15px;
+    width: 100%;
+
+    nav {
+        .pagination {
+            margin-bottom: 0px !important;
+
+            li {
+                a {
+                    color: $txt-black;
+                    &:focus{
+                        box-shadow: 0 0 0 0 #fff !important;
+                       
+                    }
+                }
+                .previous{
+                    background-color: $primary-color;
+                    color: $txt-white;
+                }
+                .next{
+                    background-color: $primary-color;
+                    color: $txt-white;
+                }
+            }
+        }
+
+    }
+}
+//form-scss
+.page-main-div{
+    padding: 0px 15px;
+}
+.form-title{
+    background-color: $success;
+    padding: 10px 10px;
+    border-radius: 5px;
+    h4{
+        color: $txt-white;
+    }
+}
+.form-div{
+    padding: 10px 0px 30px;
+    label{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-roboto;
+    }
+    input{
+        background-color: $input-color;
+        border: 1px solid $input-color;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-roboto;
+        padding: 10px 10px;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+            border: 1px solid $input-color;
+            background-color: $input-color;
+        }
+        &:active{
+            background-color: $input-color;
+            border: 1px solid $input-color; ;
+        }
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        background-color: $input-color !important;
+        -webkit-text-fill-color: $black !important;
+        -webkit-box-shadow: 0 0 0px 1000px $input-color inset;
+        border: 1px solid $input-color; ;
+    }
+    .form-btn{
+        background-color:$purple ;
+        color: $white;
+        padding: 10px 10px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-roboto;
+    }
+}
